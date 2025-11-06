@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66c7b8f5032da714cb81bb61041289a0, type: 3}
+  m_Name: CookDetailData_Test
+  m_EditorClassIdentifier: 
+  cookData:
+    image: {fileID: 21300000, guid: 8ac57be9e9667cb4796c1a5cd06d38e7, type: 3}
+    title: "\u4E09\u7A2E\u306E\u6FC0\u5B89\u30C1\u30E3\u30F3\u30D7\u30EB"
+    tags:
+    - "\u30C1\u30E3\u30F3\u30D7\u30EB"
+    - "\u5B89\u4FA1"
+    day: 2025/11/06
+    star: 4
+    mat_Datas:
+    - material_Name: "\u30D4\u30FC\u30DE\u30F3"
+      amount: 2
+      unit: "\u500B"
+      memo: "\u7E26\u306B\u5207\u308B"
+    - material_Name: "\u9B5A\u8089\u30BD\u30FC\u30BB\u30FC\u30B8"
+      amount: 1
+      unit: "\u500B"
+      memo: "\u4E00\u5EA6\u7E26\u306B\u5207\u308A\u534A\u5206\u306B\u3059\u308B"
+    - material_Name: "\u6EB6\u304D\u5375"
+      amount: 1
+      unit: "\u500B"
+      memo: "\u30E9\u30FC\u6CB9\u3092\u5165\u308C\u308B"
+    - material_Name: "\u91AC\u6CB9"
+      amount: 1
+      unit: "\u5927\u5319"
+      memo: 
+    - material_Name: "\u9162"
+      amount: 1
+      unit: "\u5C0F\u5319"
+      memo: 
+    - material_Name: "\u5869\u30B3\u30B7\u30E7\u30A6"
+      amount: -1
+      unit: "\u9069\u91CF"
+      memo: 
+    - material_Name: "\u4E00\u5473"
+      amount: -1
+      unit: "\u9069\u91CF"
+      memo: 
+    - material_Name: "\u30E9\u30FC\u6CB9"
+      amount: -1
+      unit: "\u9069\u91CF"
+      memo: 
+    process:
+    - "\u30D4\u30FC\u30DE\u30F3\u3092\u7E26\u306B\u3001\u9B5A\u8089\u30BD\u30FC\u30BB\u30FC\u30B8\u3092\u5C0F\u3055\u304F\u659C\u3081\u306B\u5207\u308B"
+    - "\u30D5\u30E9\u30A4\u30D1\u30F3\u306B\u6CB9\u3092\u6577\u304F(\u4ECA\u56DE\u306F\u3054\u307E\u6CB9)"
+    - "\u5C11\u3057\u30D5\u30E9\u30A4\u30D1\u30F3\u3092\u6E29\u3081\u3001\u5207\u3063\u305F\u5177\u6750\u3092\u6295\u5165\u3059\u308B"
+    - "\u4E2D\u706B\u3067\u5177\u6750\u306B\u713C\u304D\u8DE1\u304C\u3064\u304F\u307E\u3067\u7092\u3081\u308B"
+    - "\u91A4\u6CB9\u3092\u5927\u5319 \u4E00\u676F \u5165\u308C\u308B"
+    - "\u9162\u3092\u5C0F\u5319 \u4E00\u676F \u5165\u308C\u308B"
+    - "\u5869\u30B3\u30B7\u30E7\u30A6\u3068\u4E00\u5473\u3001\u30E9\u30FC\u6CB9\u3092\u5165\u308C\u5473\u306E\u6FC3\u3055\u3092\u8ABF\u6574"
+    - "\u307E\u3093\u3079\u3093\u306A\u304F\u5473\u304C\u3044\u304D\u308F\u305F\u308B\u69D8\u306B\u6DF7\u305C\u308B"
+    - "\u4E00\u5EA6\u3001\u4E0A\u8A18\u3067\u4F5C\u3063\u305F\u30E2\u30CE\u3092\u5225\u306E\u5BB9\u5668\u306B\u79FB\u3059"
+    - "\u6EB6\u304D\u5375\u3092\u4F5C\u308A\u3001\u30D5\u30E9\u30A4\u30D1\u30F3\u306B\u6CB9\u3092\u6577\u304F"
+    - "\u6EB6\u304D\u5375\u306B\u306F\u30E9\u30FC\u6CB9\u3092\u5165\u308C\u308B"
+    - "\u4E2D\u706B\u3067\u7092\u3081\u306A\u304C\u3089\u7BB8\u3067\u6DF7\u305C\u308B"
+    - "\u534A\u719F\u306B\u306A\u3063\u305F\u3042\u305F\u308A\u3067\u706B\u3092\u6B62\u308B"
+    - "\u5148\u307B\u3069\u5225\u306E\u5BB9\u5668\u306B\u76DB\u3063\u305F\u4E0A\u306B\u30B9\u30AF\u30E9\u30F3\u30D6\u30EB\u30A8\u30C3\u30B0\u3092\u76DB\u308B"
+    memo: "\u5473\u306F\u3081\u3061\u3083\u304F\u3061\u3083\u304A\u3044\u3057\u3044\u304C\u30DC\u30EA\u30E5\u30FC\u30E0\u306B\u6B20\u3051\u308B"
