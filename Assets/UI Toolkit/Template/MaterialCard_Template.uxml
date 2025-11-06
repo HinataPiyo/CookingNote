@@ -1,0 +1,14 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement name="root" style="flex-direction: row; border-top-width: 0; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0);">
+        <ui:VisualElement name="material-box" style="flex-grow: 1; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); width: 20%;">
+            <ui:Label text="材料" name="material-value" style="-unity-text-align: middle-center; -unity-font-definition: url(&quot;project://database/Assets/Fonts/NotoSansJP-Medium.ttf?fileID=12800000&amp;guid=43682583b3e165044b1408374d0747bd&amp;type=3#NotoSansJP-Medium&quot;); -unity-font-style: normal; font-size: 18px;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="amount-box" style="flex-grow: 1; border-top-width: 0; border-right-width: 2px; border-bottom-width: 0; border-left-width: 2px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); width: 6%;">
+            <ui:Label text="分量" name="amount-value" style="-unity-text-align: middle-center; -unity-font-definition: url(&quot;project://database/Assets/Fonts/NotoSansJP-Medium.ttf?fileID=12800000&amp;guid=43682583b3e165044b1408374d0747bd&amp;type=3#NotoSansJP-Medium&quot;); -unity-font-style: normal; font-size: 18px;" />
+            <ui:Label text="cc" name="unit-value" style="position: absolute; right: 0%; bottom: 0%; -unity-font-definition: url(&quot;project://database/Assets/Fonts/NotoSansJP-Medium.ttf?fileID=12800000&amp;guid=43682583b3e165044b1408374d0747bd&amp;type=3#NotoSansJP-Medium&quot;); -unity-text-align: lower-right;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="memo-box" style="flex-grow: 1; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); width: 30%;">
+            <ui:Label text="メモ" name="memo-value" style="-unity-text-align: middle-center; -unity-font-definition: url(&quot;project://database/Assets/Fonts/NotoSansJP-Medium.ttf?fileID=12800000&amp;guid=43682583b3e165044b1408374d0747bd&amp;type=3#NotoSansJP-Medium&quot;); -unity-font-style: normal; font-size: 18px;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,55 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Template name="CookCard_Template" src="project://database/Assets/UI%20Toolkit/Template/CookCard_Template.uxml?fileID=9197481963319205126&amp;guid=6baeb0a081a9d5143b9949f0ab13bde6&amp;type=3#CookCard_Template" />
+    <ui:Template name="Tag_Template" src="project://database/Assets/UI%20Toolkit/Template/Tag_Template.uxml?fileID=9197481963319205126&amp;guid=2a5362cc7236d8a4a9980efda13fcae1&amp;type=3#Tag_Template" />
+    <ui:Template name="MaterialCar_Template" src="project://database/Assets/UI%20Toolkit/Template/MaterialCard_Template.uxml?fileID=9197481963319205126&amp;guid=2036c844fdd3a52469de428cd27b40cd&amp;type=3#MaterialCard_Template" />
+    <ui:Template name="ProcessCard_Style" src="project://database/Assets/UI%20Toolkit/Template/ProcessCard_Style.uxml?fileID=9197481963319205126&amp;guid=fe4b87aa57cf0204da21236a9d8bcb86&amp;type=3#ProcessCard_Style" />
+    <Style src="project://database/Assets/UI%20Toolkit/Style/Background_Style.uss?fileID=7433441132597879392&amp;guid=678fd87d2897f91498f3843a370046d1&amp;type=3#Background_Style" />
+    <ui:VisualElement name="root" style="flex-grow: 1; flex-direction: row; justify-content: space-between;">
+        <ui:VisualElement name="tag-search-box" picking-mode="Ignore" class="background" style="width: 24%;" />
+        <ui:VisualElement name="recipe-list-box" picking-mode="Ignore" class="background" style="flex-grow: 1;">
+            <ui:VisualElement name="title-box" style="height: 7%; margin-bottom: 50px; -unity-text-align: middle-center;">
+                <ui:Label text="検索結果" name="title-value" style="font-size: 36px; -unity-font-definition: url(&quot;project://database/Assets/UI%20Toolkit/UnityThemes/UnityDefaultRuntimeTheme.tss?fileID=2230732570650464555&amp;guid=0f7ce6b5c9cbf1d4fbaba48e0241d1a7&amp;type=3#NotInter-Regular&quot;);" />
+            </ui:VisualElement>
+            <ui:ScrollView name="card-list-scrollview">
+                <ui:Instance template="CookCard_Template" />
+                <ui:Instance template="CookCard_Template" />
+            </ui:ScrollView>
+        </ui:VisualElement>
+        <ui:VisualElement name="recipe-detail-box" picking-mode="Ignore" class="background" style="width: 40%;">
+            <ui:VisualElement name="intaract-area-box" style="height: 100px; border-top-width: 0; border-right-width: 0; border-bottom-width: 3px; border-left-width: 0; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0);" />
+            <ui:ScrollView>
+                <ui:VisualElement name="side-disp-content" style="flex-direction: row;">
+                    <ui:VisualElement name="icon-box" style="width: 150px; height: 150px; border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); overflow: hidden; margin-top: 5px; margin-right: 5px; margin-bottom: 5px; margin-left: 5px;" />
+                    <ui:VisualElement name="title-box" style="padding-top: 6px; padding-right: 6px; padding-bottom: 6px; padding-left: 6px; flex-grow: 1;">
+                        <ui:Label text="タイトルタイトルタイトルタイトルタイトル" name="title-value" style="font-size: 34px; -unity-font-definition: url(&quot;project://database/Assets/Fonts/NotoSansJP-Medium.ttf?fileID=12800000&amp;guid=43682583b3e165044b1408374d0747bd&amp;type=3#NotoSansJP-Medium&quot;); margin-bottom: 0; padding-bottom: 0; padding-top: 0; margin-top: 0; white-space: normal;" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="tag-box" style="flex-direction: row; flex-wrap: wrap; margin-top: 42px;">
+                    <ui:Label text="タグ" name="tag-text" style="font-size: 32px; -unity-font-definition: url(&quot;project://database/Assets/Fonts/NotoSansJP-Medium.ttf?fileID=12800000&amp;guid=43682583b3e165044b1408374d0747bd&amp;type=3#NotoSansJP-Medium&quot;); position: absolute; top: -42px; left: 16px;" />
+                    <ui:VisualElement name="tag-content" style="flex-grow: 1; flex-direction: row; flex-wrap: wrap; justify-content: flex-start; padding-top: 15px; padding-right: 15px; padding-bottom: 15px; padding-left: 15px;">
+                        <ui:Instance template="Tag_Template" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="materials-box" style="margin-top: 50px; margin-right: 5px; margin-bottom: 5px; margin-left: 5px; max-height: none;">
+                    <ui:Label text="材料" name="material-text" style="font-size: 28px; -unity-font-definition: url(&quot;project://database/Assets/Fonts/NotoSansJP-Medium.ttf?fileID=12800000&amp;guid=43682583b3e165044b1408374d0747bd&amp;type=3#NotoSansJP-Medium&quot;); position: absolute; top: -58px; left: 16px;" />
+                    <ui:Instance template="MaterialCar_Template" name="material-card-text" style="border-top-width: 2px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0);" />
+                    <ui:VisualElement name="material-card-content" style="flex-grow: 1;">
+                        <ui:Instance template="MaterialCar_Template" />
+                        <ui:Instance template="MaterialCar_Template" />
+                        <ui:Instance template="MaterialCar_Template" />
+                        <ui:Instance template="MaterialCar_Template" />
+                        <ui:Instance template="MaterialCar_Template" />
+                        <ui:Instance template="MaterialCar_Template" />
+                        <ui:Instance template="MaterialCar_Template" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="process-box" style="flex-direction: row; flex-wrap: wrap; margin-top: 42px;">
+                    <ui:Label text="手順" name="process-text" style="font-size: 32px; -unity-font-definition: url(&quot;project://database/Assets/Fonts/NotoSansJP-Medium.ttf?fileID=12800000&amp;guid=43682583b3e165044b1408374d0747bd&amp;type=3#NotoSansJP-Medium&quot;); position: absolute; top: -42px; left: 16px;" />
+                    <ui:VisualElement name="process-content" style="flex-grow: 1; margin-top: 5px; margin-right: 5px; margin-bottom: 5px; margin-left: 5px;">
+                        <ui:Instance template="ProcessCard_Style" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:ScrollView>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

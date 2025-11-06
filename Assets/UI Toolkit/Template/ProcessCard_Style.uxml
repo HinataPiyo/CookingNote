@@ -1,0 +1,10 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement name="root" style="flex-direction: row; border-bottom-color: rgb(0, 0, 0); border-bottom-width: 2px; margin-top: 5px; margin-right: 5px; margin-bottom: 5px; margin-left: 5px;">
+        <ui:VisualElement name="number-box" style="width: 47px;">
+            <ui:Label text="1." name="number-value" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/NotoSansJP-Medium.ttf?fileID=12800000&amp;guid=43682583b3e165044b1408374d0747bd&amp;type=3#NotoSansJP-Medium&quot;); -unity-font-style: normal; font-size: 26px;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="process-box" style="flex-grow: 1; justify-content: center;">
+            <ui:Label text="ここに手順を記入する" name="process-value" style="-unity-text-align: middle-left; -unity-font-definition: url(&quot;project://database/Assets/Fonts/NotoSansJP-Medium.ttf?fileID=12800000&amp;guid=43682583b3e165044b1408374d0747bd&amp;type=3#NotoSansJP-Medium&quot;); font-size: 20px;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
